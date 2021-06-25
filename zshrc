@@ -1,15 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Common alias
-alias p="php"
-alias com="composer"
-alias v="valet"
-alias g="git"
-alias s="serverless"
+export PATH=/usr/local/sbin:$PATH
 
 # https://github.com/rupa/z
-source ~/.oh-my-zsh/plugins/z.sh
+# source ~/.oh-my-zsh/plugins/z.sh
 
 # Composer bash
 export PATH="$PATH:$HOME/.composer/vendor/bin"
@@ -24,11 +18,11 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
 # Flutter
-export PATH="$PATH:/Users/jobs/Work/flutter/bin"
+export PATH="$PATH:$HOME/Work/flutter/bin"
 #=======================================================================#
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/jobs/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -136,8 +130,10 @@ alias setproxy='export http_proxy=http://127.0.0.1:1087;export https_proxy=http:
 alias disproxy='unset http_proxy https_proxy' # 取消终端代理
 
 alias ip='curl cip.cc' # 测试
+
+# Java
 export JAVA_HOME=$(/usr/libexec/java_home)
-export M2_HOME=/Users/jobs/Development/apache-maven-3.6.3
+export M2_HOME=$HOME/Development/apache-maven-3.6.3
 export PATH=$PATH:$M2_HOME/bin
-export JMETER_HOME=/Users/jobs/Development/apache-jmeter-5.4.1
+export JMETER_HOME=$HOME/Development/apache-jmeter-5.4.1
 export PATH=$PATH:$JMETER_HOME/bin:

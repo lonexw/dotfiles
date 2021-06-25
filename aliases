@@ -1,0 +1,6 @@
+# Common alias
+alias p="php"
+alias com="composer"
+alias v="valet"
+alias g="git"
+alias s="serverless"

@@ -1,3 +1,7 @@
+- defaults:
+    link:
+        relink: true
+
 - clean: ['~']
 
 - link:
@@ -12,4 +16,6 @@
         relink: false
         force: false
 
-
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - ./setup.sh

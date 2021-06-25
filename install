@@ -2,6 +2,7 @@
 
 set -e
 
+# config file for Dotbot
 CONFIG="install.conf.yaml"
 DOTBOT_DIR="dotbot"
 
